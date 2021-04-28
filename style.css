@@ -1,0 +1,57 @@
+html {
+	height: 100%;
+}
+body {
+	background-color: white;
+	min-height: 100%
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.grid-container {
+	display: grid;
+	grid-template-rows: 15rem;
+	grid-template-columns: repeat(3, 15rem);
+	text-align: center;
+	border-radius: 13px;
+	margin: 2rem;
+}
+
+.grid-container {
+	display: grid;
+	grid-template: 
+		"S" 
+		"U" 
+		"L" 
+}
+
+@media (min-width: 800px) {
+	.grid-container {
+	grid-template: 
+		"S U L" 30rem
+	}
+}
+
+
+.sedans {
+	grid-area: S;
+	background-color: hsl(31, 77%, 52%);
+	padding: 10px;
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+}
+.suvs {
+	grid-area: U;
+	background-color: hsl(184, 100%, 22%);
+	padding: 10px;
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+}
+.luxury {
+	grid-area: L;
+	background-color: hsl(179, 100%, 13%);
+	padding: 10px;
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+}
